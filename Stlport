@@ -1,0 +1,5 @@
+cd stlport/build/lib
+
+make -f gcc.mak depend
+
+make -f gcc.mak install
