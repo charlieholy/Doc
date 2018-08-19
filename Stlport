@@ -3,3 +3,7 @@ cd stlport/build/lib
 make -f gcc.mak depend
 
 make -f gcc.mak install
+
+g++ test.cpp -I./STLport-5.2.1/stlport -L/usr/local/lib -lstlport
+
+在/etc/ld.so.conf中加入/usr/local/lib这一行，保存之后，再运行：/sbin/ldconfig 
